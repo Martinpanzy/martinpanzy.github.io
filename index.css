@@ -24,14 +24,14 @@ h1 {
 }
 
 #holder {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 #left {
-    flex-grow: 100;
     min-width: 1em;
+    flex-grow: 100;
 }
 
 #middle {
