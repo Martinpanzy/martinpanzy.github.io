@@ -10,25 +10,12 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-body {
-    font-family: "Century Gothic", CenturyGothic, Geneva, Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    padding: 1em;
-}
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
-        --text: #fff;
-        --bg: #000;
+        --text: #ececec;
+        --bg: #0c0c0c;
     }
-}
-
-h1 {
-    font-size: 2em;
-}
+} */
 
 #holder {
     margin-top: 30px;
@@ -37,16 +24,16 @@ h1 {
 }
 
 #left {
-    min-width: 1em;
+    min-width: 1rem;
     flex-grow: 100;
 }
 
 #middle {
-    max-width: 40em;
+    max-width: 50rem;
 }
 
 #right {
-    min-width: 1em;
+    min-width: 1rem;
     flex-grow: 100;
 }
 
@@ -57,4 +44,76 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, Arial, Helvetica, sans-serif;
+    /* font-family: Söhne, sans-serif; */
+    font-size: 16px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* SECTION STYLES */
+.image-text-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Space between the image and text */
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--bg);
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+}
+
+.text-container {
+    width: 100%;
+    max-width: 32rem;
+}
+
+.text-container h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.text-container p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .image-text-section {
+        flex-direction: column; /* Stacks image and text vertically on small screens */
+        align-items: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px; /* Adds space between the image and text */
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: fit-content;
+        height: auto;
+    }
 }
