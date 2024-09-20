@@ -77,6 +77,10 @@ p {
     background-color: var(--bg);
 }
 
+.intro {
+    flex-direction: row-reverse;
+}
+
 .image-container img {
     width: 100%;
     max-width: 15rem;
