@@ -137,3 +137,47 @@ footer.sticky-bottom {
         height: auto;
     }
 }
+
+/* PROJECT PAGE SECTION STYLES */
+.center-media {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5rem;
+    margin: 1.2rem auto;
+    max-width: 100%;
+}
+
+.grid-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2.5rem auto;
+    max-width: 100%;
+}
+
+.video-container {
+    flex: 1;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .video-row {
+        flex-direction: column;
+    }
+}
