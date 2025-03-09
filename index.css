@@ -12,8 +12,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: #ececec;
-        --bg: #0c0c0c;
+        --text: #fff;
+        --bg: #000;
     }
 }
 
@@ -48,10 +48,10 @@ a:hover {
 
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, Arial, Helvetica, sans-serif;
-    /* font-family: Söhne, sans-serif; */
     font-size: 16px;
     background-color: var(--bg);
     color: var(--text);
+    line-height: 1.5;
 }
 
 h1 {
@@ -101,6 +101,7 @@ footer.sticky-bottom {
     width: 100%;
     max-width: 15rem;
     height: auto;
+    line-height: 1.5;
 }
 
 .text-container {
