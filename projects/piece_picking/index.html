@@ -20,7 +20,22 @@
             src="./../../images/xyz_logo.png"
             alt="XYZ Robotics Logo"
             style="height: 30px"
+            id="xyz-logo"
           />
+          <script>
+            const logo = document.getElementById("xyz-logo");
+            logo.src = window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "./../../images/xyz_logo.png"
+              : "./../../images/xyz_logo_w.png";
+
+            window
+              .matchMedia("(prefers-color-scheme: dark)")
+              .addEventListener("change", (e) => {
+                logo.src = e.matches
+                  ? "./../../images/xyz_logo.png"
+                  : "./../../images/xyz_logo_w.png";
+              });
+          </script>
         </div>
 
         <img
